@@ -1,0 +1,182 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f0f0;
+}
+
+.tab-container {
+  max-width: 600px;
+  margin: 20px auto 50px auto;
+  overflow: hidden;
+}
+
+.tab-header {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+
+.tab-button {
+  color: #b2b2b2;
+  flex: 1;
+  padding: 10px 20px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.tab-button.active {
+  border-bottom: 3px solid #f59e0b;
+  color: #45464e;
+}
+
+.tab-content {
+  padding: 20px 20px 0 20px;
+}
+
+.tab-pane {
+  display: none;
+}
+
+.tab-pane.active {
+  display: block;
+}
+
+.checkout-container {
+  width: 400px;
+  height: max-content;
+  padding: 20px 20px;
+  margin: 40px auto;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+}
+
+.cancel-icon-div {
+  display: flex;
+  margin-left: auto;
+  margin-bottom: 20px;
+}
+
+.cancel-icon {
+  width: 30px;
+}
+
+.checkout-heading {
+  display: flex;
+  justify-content: space-between;
+  color: #b2b2b2;
+}
+.qos-logo {
+  width: 100px;
+}
+
+.checkout-heading span {
+  color: #f59e0b;
+  font-weight: 700;
+  line-height: normal;
+}
+.content form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 2rem;
+}
+
+.content p{
+ margin-bottom: 0;
+ text-align: center;
+}
+ .input-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.input-div label {
+  margin-bottom: 5px;
+  font-size: 13px;
+}
+
+ .input-div input {
+  height: 40px;
+  padding-left: 10px;
+}
+.input-div select {
+    height: 45px;
+    padding-left: 10px;
+  }
+
+.bank-card .input-div-group {
+  display: flex;
+  gap: 10px;
+}
+
+.checkout-button {
+  width: 100%;
+  padding: 16px 0px;
+  border-radius: 4px;
+  border: 1px solid #f59e0b;
+  background: #f59e0b;
+  color: #fff;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.secured {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.secured img {
+  width: 22px;
+}
+
+.secured p {
+  color: #b2b2b2;
+  font-size: 14px;
+}
+
+.otp-page .content{
+        padding: 20px;
+ 
+}
+
+.otp-page a{
+    font-size: 12px;
+    margin-top: -20px;
+}
+
+.otp-input-group{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+}
+.otp-input-group input{
+    width: 40px;
+    height: 40px;
+}
+
+.trans-icon{
+    width: 60px;
+}
+
+.transation-page{
+    padding: 20px;
+}
+
+.transation-page a{
+    font-size: 12px;
+    margin-top: -20px;
+}
+
+.transation-page div span{
+color: #B2B2B2;
+font-size: 14px;
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Vanilla Tabs</title>
+  </head>
+
+  <body>
+    <div class="checkout-container">
+        <button><a href="html\otppage.html">OTP Page</a></button>
+        <button><a href="/html/paymentfailed.html">Payment Failed</a></button>
+        <button><a href="/html/paymentsuccess.html">Payment Successful</a></button>
+    </div>
+    <div class="checkout-container">
+      <div class="cancel-icon-div">
+        <img class="cancel-icon" src="./assets/cancel.svg" alt="cancel" />
+      </div>
+      <div class="checkout-heading">
+        <img class="qos-logo" src="./assets/qoslogo.svg" alt="qospay" />
+        <p class="header-info">
+          Idrees Afolabi, you are about <br />
+          to pay
+          <span class="header-info-price">100 CFA</span>
+        </p>
+      </div>
+      <div class="content">
+        <div class="tab-container">
+          <div class="tab-header">
+            <button class="tab-button active" onclick="changeTab(0)">
+              Mobile money
+            </button>
+            <button class="tab-button" onclick="changeTab(1)">Bank Card</button>
+          </div>
+          <div class="tab-content">
+            <div class="tab-pane active mobile-money">          <div class="content">
+                <form>
+                  <p>Please select operator</p>
+                  <div class="input-div">
+                    <label for="select-operator">Select operator</label>
+                    <select id="select-operator" name="select-operator">
+                        <option value="1">MTN</option>
+                        <option value="2">Togo</option>
+                        <option value="3">Benin</option>
+                    </select>
+                  </div>
+                  <div class="input-div">
+                    <label for="phone-number">Phone Number</label>
+                    <input
+                      type="tel"
+                      id="phone-number"
+                      name="phone-number"
+                      placeholder="+234 70 000 0000"
+                    />
+                  </div>
+                  <button type="submit" class="checkout-button">
+                    Pay CFA 100
+                  </button>
+                </form>
+              </div></div>
+            <div class="tab-pane bank-card">
+              <div class="content">
+                <form>
+                  <p>Please enter card details</p>
+                  <div class="input-div">
+                    <label for="card-number">Card Number</label>
+                    <input
+                      type="text"
+                      id="card-number"
+                      name="card-number"
+                      placeholder="0000 0000 0000 0000"
+                    />
+                  </div>
+                  <div class="input-div-group">
+                    <div class="input-div">
+                      <label for="expiry-date">Expiry date</label>
+                      <input
+                        type="text"
+                        id="expiry-date"
+                        name="expiry-date"
+                        placeholder="MM/YYYY"
+                      />
+                    </div>
+                    <div class="input-div">
+                      <label for="cvv">CVV</label>
+                      <input
+                        type="text"
+                        id="cvv"
+                        name="cvv"
+                        placeholder="123"
+                      />
+                    </div>
+                  </div>
+                  <button type="submit" class="checkout-button">
+                    Pay CFA 100
+                  </button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="secured">
+        <img class="lock-icon" src="./assets/lock.svg" alt="lock-icon" />
+        <p>secured by QOSPAY</p>
+      </div>
+    </div>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
