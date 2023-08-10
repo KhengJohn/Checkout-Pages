@@ -212,3 +212,9 @@ font-size: 14px;
     opacity: 1;
   }
 }
+
+@media (max-width: 760px) {
+  .checkout-container, .loader-container{
+    width: 80%;
+  }
+}
