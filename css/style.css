@@ -180,3 +180,35 @@ body {
 color: #B2B2B2;
 font-size: 14px;
 }
+
+.loader-container{
+  width: 400px;
+  height: 500px;
+  padding: 20px 20px;
+  margin: 40px auto;
+  flex-shrink: 0;
+  border-radius: 8px;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.loader-logo{
+  margin-top: 100px;
+  width: 200px;
+  animation: fade 2s linear infinite both;
+}
+
+@keyframes fade {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.4;
+  }
+  100% {
+    opacity: 1;
+  }
+}

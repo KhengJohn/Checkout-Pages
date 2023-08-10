@@ -12,4 +12,4 @@ function changeTab(index) {
 }
 
 // Initially, activate the first tab
-changeTab(1);
+changeTab(0);

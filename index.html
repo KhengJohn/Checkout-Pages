@@ -9,9 +9,13 @@
 
   <body>
     <div class="checkout-container">
-        <button><a href="html\otppage.html">OTP Page</a></button>
-        <button><a href="/html/paymentfailed.html">Payment Failed</a></button>
-        <button><a href="/html/paymentsuccess.html">Payment Successful</a></button>
+      <button><a href="html\otppage.html">OTP Page</a></button>
+      <button><a href="/html/insufficientfund.html">insufficient Fund</a></button>
+      <button><a href="/html/paymentfailed.html">Payment Failed</a></button>
+      <button>
+        <a href="/html/paymentsuccess.html">Payment Successful</a>
+      </button>
+      <button><a href="/html/loader.html">Loader</a></button>
     </div>
     <div class="checkout-container">
       <div class="cancel-icon-div">
@@ -34,15 +38,16 @@
             <button class="tab-button" onclick="changeTab(1)">Bank Card</button>
           </div>
           <div class="tab-content">
-            <div class="tab-pane active mobile-money">          <div class="content">
+            <div class="tab-pane active mobile-money">
+              <div class="content">
                 <form>
                   <p>Please select operator</p>
                   <div class="input-div">
                     <label for="select-operator">Select operator</label>
                     <select id="select-operator" name="select-operator">
-                        <option value="1">MTN</option>
-                        <option value="2">Togo</option>
-                        <option value="3">Benin</option>
+                      <option value="1">MTN</option>
+                      <option value="2">Togo</option>
+                      <option value="3">Benin</option>
                     </select>
                   </div>
                   <div class="input-div">
@@ -58,7 +63,8 @@
                     Pay CFA 100
                   </button>
                 </form>
-              </div></div>
+              </div>
+            </div>
             <div class="tab-pane bank-card">
               <div class="content">
                 <form>
